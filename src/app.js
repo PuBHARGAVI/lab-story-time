@@ -41,7 +41,7 @@ function doesFriendExist(ageInText,ageInNumber) {
 
 function sweetTooth(totalNoOfSweets,sweetsConsumedByKaren,sweetsConsumedInNMeters,metersToTravel) {
     totalNoOfSweets = totalNoOfSweets - sweetsConsumedByKaren;
-    var res = metersToTravel * sweetsConsumedInNMeters;
+    var res=metersToTravel* sweetsConsumedInNMeters;
     if(res <= totalNoOfSweets) {
     totalNoOfSweets -= res;
     return totalNoOfSweets / 2;
@@ -109,6 +109,6 @@ function aDifficultChoice(choice) {
 //Return the length of the complete strategy
 
 function consoleKaren(strategies) {
-    var value = strategies.split("");
+    var value = strategies.join("");
     return value.length;
 }
